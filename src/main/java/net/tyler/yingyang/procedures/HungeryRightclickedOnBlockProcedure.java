@@ -23,6 +23,40 @@ public class HungeryRightclickedOnBlockProcedure {
 		double sz = 0;
 		double particleRadius = 0;
 		double particleAmount = 0;
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.LADDER) {
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "give @p yingyang:greatswordsteel");
+				}
+			}
+		} else {
+			particleAmount = 8;
+			particleRadius = 2;
+			for (int index0 = 0; index0 < (int) particleAmount; index0++) {
+				world.addParticle((SimpleParticleType) (YingyangModParticleTypes.BLOODSMAL), (x + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (y + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius),
+						(z + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)),
+						(Mth.nextDouble(RandomSource.create(), -0.001, 0.001)));
+			}
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.CRIMSON_STEM) {
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "give @p diamond");
+				}
+			}
+		} else {
+			particleAmount = 8;
+			particleRadius = 2;
+			for (int index1 = 0; index1 < (int) particleAmount; index1++) {
+				world.addParticle((SimpleParticleType) (YingyangModParticleTypes.BLOODSMAL), (x + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (y + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius),
+						(z + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)),
+						(Mth.nextDouble(RandomSource.create(), -0.001, 0.001)));
+			}
+		}
 		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.IRON_BLOCK) {
 			{
 				Entity _ent = entity;
@@ -34,7 +68,7 @@ public class HungeryRightclickedOnBlockProcedure {
 		} else {
 			particleAmount = 8;
 			particleRadius = 2;
-			for (int index0 = 0; index0 < (int) particleAmount; index0++) {
+			for (int index2 = 0; index2 < (int) particleAmount; index2++) {
 				world.addParticle((SimpleParticleType) (YingyangModParticleTypes.BLOODSMAL), (x + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (y + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius),
 						(z + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)),
 						(Mth.nextDouble(RandomSource.create(), -0.001, 0.001)));
@@ -58,7 +92,7 @@ public class HungeryRightclickedOnBlockProcedure {
 		} else {
 			particleAmount = 8;
 			particleRadius = 2;
-			for (int index1 = 0; index1 < (int) particleAmount; index1++) {
+			for (int index3 = 0; index3 < (int) particleAmount; index3++) {
 				world.addParticle((SimpleParticleType) (YingyangModParticleTypes.BLOODSMAL), (x + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (y + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius),
 						(z + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)), (Mth.nextDouble(RandomSource.create(), -0.001, 0.001)),
 						(Mth.nextDouble(RandomSource.create(), -0.001, 0.001)));
