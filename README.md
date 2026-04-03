@@ -6,6 +6,9 @@ I CANT FUCKING UPLOAD .GRADLE FOLDER (i hope it doesnt matter)
 
 
 items YAYAYAYAYAYAYAY:
+
+
+
 dissapearance: its a display item for aesthetic purposes. DOES ABSOLOTELY NOTHING
 <img width="688" height="1043" alt="image" src="https://github.com/user-attachments/assets/5f2647b9-c39b-4af2-b0bd-e1c2e248adfd" />
 
