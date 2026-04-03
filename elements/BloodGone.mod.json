@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s fucking bled out :sob:",
+    "itemDeathMessage": "%1$s %1$s fucking bled out because of %2$s using %3$s",
+    "playerDeathMessage": "%1$s %1$s fucking bled out  BECAUSE OF  %2$s"
+  }
+}
