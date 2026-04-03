@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    "abb",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "yingyang:confused_ore"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    },
+    "c": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "result": {
+    "item": "yingyang:sickle",
+    "count": 1
+  }
+}

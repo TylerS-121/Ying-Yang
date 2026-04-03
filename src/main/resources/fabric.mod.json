@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "yingyang",
+  "version": "1.0.2",
+  "name": "ying yang",
+  "description": "bloodtrail. (mod by Tyler_S_121)",
+  "authors": [
+    "Tyler_s_121"
+  ],
+  "contact": {
+    "homepage": "https://github.com/TylerS-121",
+    "sources": ""
+  },
+  "license": "Academic Free License v3.0",
+  "icon": "assets/yingyang/icon.png",
+  "accessWidener": "yingyang.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.tyler.yingyang.YingyangMod"
+    ],
+    "client": [
+      "net.tyler.yingyang.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "mixins": [
+    "yingyang.mixins.json"
+  ]
+}

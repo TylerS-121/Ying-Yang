@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "b c",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "yingyang:half_confused_ingot"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "yingyang:confused_ore",
+    "count": 1
+  }
+}
