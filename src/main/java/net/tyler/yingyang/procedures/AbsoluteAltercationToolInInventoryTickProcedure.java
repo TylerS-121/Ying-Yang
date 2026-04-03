@@ -15,9 +15,7 @@ public class AbsoluteAltercationToolInInventoryTickProcedure {
 			return;
 		if (EnchantmentHelper.getItemEnchantmentLevel(YingyangModEnchantments.DEATH, itemstack) == 0) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 60, 0));
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 0));
 		}
 	}
 }

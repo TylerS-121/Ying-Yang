@@ -36,5 +36,12 @@ public class CharmSummonerRightclickedOnBlockProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == YingyangModItems.HALF_CONFUSED_INGOT) {
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(YingyangModItems.THELOST_ARTIFACT));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
+		}
 	}
 }

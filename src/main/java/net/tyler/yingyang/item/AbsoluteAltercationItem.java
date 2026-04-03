@@ -33,7 +33,7 @@ public class AbsoluteAltercationItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 3f;
 			}
 
 			public int getLevel() {
