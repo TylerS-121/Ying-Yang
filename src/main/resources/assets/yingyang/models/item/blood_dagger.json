@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "yingyang:item/small_dagger_based_off_blood"
+  }
+}

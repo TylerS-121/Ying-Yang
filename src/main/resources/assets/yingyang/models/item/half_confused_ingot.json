@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "yingyang:item/conf1"
+    "layer0": "yingyang:item/confused_ingot_half"
   }
 }
