@@ -8,13 +8,19 @@ import net.tyler.yingyang.procedures.V8ybyv8bsCharmItemInInventoryTickProcedure;
 import net.tyler.yingyang.procedures.UltimateBB8sCharmItemInInventoryTickProcedure;
 import net.tyler.yingyang.procedures.ThelostArtifactItemInInventoryTickProcedure;
 import net.tyler.yingyang.procedures.SickleRightclickedProcedure;
+import net.tyler.yingyang.procedures.OkayRightclickedOnBlockProcedure;
+import net.tyler.yingyang.procedures.MagikalSwordLivingEntityIsHitWithToolProcedure;
 import net.tyler.yingyang.procedures.MagikAuraItemInInventoryTickProcedure;
 import net.tyler.yingyang.procedures.HungeryRightclickedOnBlockProcedure;
+import net.tyler.yingyang.procedures.HstarianAlchemancyReminderItemInInventoryTickProcedure;
 import net.tyler.yingyang.procedures.GreatswordsteelRightclickedProcedure;
 import net.tyler.yingyang.procedures.GreatswordsteelLivingEntityIsHitWithToolProcedure;
+import net.tyler.yingyang.procedures.DissapearancehitProcedure;
 import net.tyler.yingyang.procedures.DissapearanceLivingEntityIsHitWithItemProcedure;
 import net.tyler.yingyang.procedures.CharmSummonerRightclickedOnBlockProcedure;
 import net.tyler.yingyang.procedures.BloodblyatWhileProjectileFlyingTickProcedure;
+import net.tyler.yingyang.procedures.BloodDaggerRightclickedProcedure;
+import net.tyler.yingyang.procedures.BloodDaggerLivingEntityIsHitWithToolProcedure;
 import net.tyler.yingyang.procedures.AbsoluteAltercationToolInInventoryTickProcedure;
 import net.tyler.yingyang.procedures.AbsoluteAltercationRightclickedProcedure;
 import net.tyler.yingyang.procedures.AbsoluteAltercationLivingEntityIsHitWithToolProcedure;
@@ -36,5 +42,11 @@ public class YingyangModProcedures {
 		new UltimateBB8sCharmItemInInventoryTickProcedure();
 		new V8ybyv8bsCharmItemInInventoryTickProcedure();
 		new CharmSummonerRightclickedOnBlockProcedure();
+		new HstarianAlchemancyReminderItemInInventoryTickProcedure();
+		new MagikalSwordLivingEntityIsHitWithToolProcedure();
+		new DissapearancehitProcedure();
+		new BloodDaggerRightclickedProcedure();
+		new BloodDaggerLivingEntityIsHitWithToolProcedure();
+		new OkayRightclickedOnBlockProcedure();
 	}
 }

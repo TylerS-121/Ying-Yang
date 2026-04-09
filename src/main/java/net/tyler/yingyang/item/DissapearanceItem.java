@@ -1,6 +1,7 @@
 
 package net.tyler.yingyang.item;
 
+import net.tyler.yingyang.procedures.DissapearancehitProcedure;
 import net.tyler.yingyang.procedures.DissapearanceLivingEntityIsHitWithItemProcedure;
 
 import net.minecraft.world.level.Level;
@@ -34,14 +35,14 @@ public class DissapearanceItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		DissapearanceLivingEntityIsHitWithItemProcedure.execute(entity);
+		DissapearanceLivingEntityIsHitWithItemProcedure.execute(world, entity);
 		return ar;
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		DissapearanceLivingEntityIsHitWithItemProcedure.execute(entity);
+		DissapearancehitProcedure.execute(entity.level(), entity, sourceentity);
 		return retval;
 	}
 }

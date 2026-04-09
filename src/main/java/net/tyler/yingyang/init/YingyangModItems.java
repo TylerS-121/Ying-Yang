@@ -8,13 +8,17 @@ import net.tyler.yingyang.item.UltimateBB8sCharmItem;
 import net.tyler.yingyang.item.ThelostArtifactItem;
 import net.tyler.yingyang.item.SpecialAxeItem;
 import net.tyler.yingyang.item.SickleItem;
+import net.tyler.yingyang.item.OkayItem;
+import net.tyler.yingyang.item.MagikalSwordItem;
 import net.tyler.yingyang.item.MagikAuraItem;
+import net.tyler.yingyang.item.HstarianAlchemancyReminderItem;
 import net.tyler.yingyang.item.HalfConfusedIngotItem;
 import net.tyler.yingyang.item.GreatswordsteelItem;
 import net.tyler.yingyang.item.DissapearanceItem;
 import net.tyler.yingyang.item.ConfusedOreItem;
 import net.tyler.yingyang.item.CharmSummonerItem;
 import net.tyler.yingyang.item.BlooditemHOWUGOTTSItem;
+import net.tyler.yingyang.item.BloodDaggerItem;
 import net.tyler.yingyang.item.AbsoluteAltercationItem;
 import net.tyler.yingyang.YingyangMod;
 
@@ -40,6 +44,10 @@ public class YingyangModItems {
 	public static Item GREATSWORDSTEEL;
 	public static Item ABSOLUTE_ALTERCATION;
 	public static Item CHARM_SUMMONER;
+	public static Item HSTARIAN_ALCHEMANCY_REMINDER;
+	public static Item MAGIKAL_SWORD;
+	public static Item BLOOD_DAGGER;
+	public static Item OKAY;
 
 	public static void load() {
 		BLOODITEM_HOWUGOTTS = register("blooditem_howugotts", new BlooditemHOWUGOTTSItem());
@@ -55,6 +63,10 @@ public class YingyangModItems {
 		GREATSWORDSTEEL = register("greatswordsteel", new GreatswordsteelItem());
 		ABSOLUTE_ALTERCATION = register("absolute_altercation", new AbsoluteAltercationItem());
 		CHARM_SUMMONER = register("charm_summoner", new CharmSummonerItem());
+		HSTARIAN_ALCHEMANCY_REMINDER = register("hstarian_alchemancy_reminder", new HstarianAlchemancyReminderItem());
+		MAGIKAL_SWORD = register("magikal_sword", new MagikalSwordItem());
+		BLOOD_DAGGER = register("blood_dagger", new BloodDaggerItem());
+		OKAY = register("okay", new OkayItem());
 	}
 
 	public static void clientLoad() {

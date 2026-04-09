@@ -9,13 +9,13 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.EquipmentSlot;
 
-public class DeathEnchantment extends Enchantment {
-	public DeathEnchantment(EquipmentSlot... slots) {
+public class BleedingEnchantment extends Enchantment {
+	public BleedingEnchantment(EquipmentSlot... slots) {
 		super(Enchantment.Rarity.COMMON, EnchantmentCategory.WEAPON, slots);
 	}
 
 	@Override
 	public boolean canEnchant(ItemStack itemstack) {
-		return Ingredient.of(new ItemStack(YingyangModItems.ABSOLUTE_ALTERCATION), new ItemStack(YingyangModItems.MAGIKAL_SWORD)).test(itemstack);
+		return Ingredient.of(new ItemStack(YingyangModItems.BLOOD_DAGGER)).test(itemstack);
 	}
 }

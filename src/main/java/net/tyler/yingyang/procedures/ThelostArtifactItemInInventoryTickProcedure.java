@@ -14,7 +14,7 @@ public class ThelostArtifactItemInInventoryTickProcedure {
 		particleRadius = 2;
 		for (int index0 = 0; index0 < (int) particleAmount; index0++) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (YingyangModParticleTypes.BLOODSMAL), x, y, z, 1, 0.1, 0.1, 0.1, 0.1);
+				_level.sendParticles((SimpleParticleType) (YingyangModParticleTypes.BLOODSMAL), x, (y + 0.5), z, 1, 0.1, 0.1, 0.1, 0.1);
 		}
 	}
 }
