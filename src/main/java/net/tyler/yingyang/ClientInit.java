@@ -13,6 +13,7 @@
 package net.tyler.yingyang;
 
 import net.tyler.yingyang.init.YingyangModParticleTypes;
+import net.tyler.yingyang.init.YingyangModModels;
 import net.tyler.yingyang.init.YingyangModEntityRenderers;
 
 import net.fabricmc.api.Environment;
@@ -26,6 +27,7 @@ public class ClientInit implements ClientModInitializer {
 
 		YingyangModParticleTypes.clientLoad();
 
+		YingyangModModels.load();
 		YingyangModEntityRenderers.load();
 	}
 }

@@ -34,16 +34,16 @@ public class BloodDaggerItem extends AxeItem {
 				return 3f;
 			}
 
-			public int getLevel() {
-				return 1;
-			}
-
 			public int getEnchantmentValue() {
 				return 2;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
+			}
+
+			public int getLevel() {
+				return 1;
 			}
 		}, 1, -2.3f, new Item.Properties());
 	}

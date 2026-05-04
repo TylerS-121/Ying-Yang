@@ -36,16 +36,16 @@ public class AbsoluteAltercationItem extends SwordItem {
 				return 3f;
 			}
 
-			public int getLevel() {
-				return 1;
-			}
-
 			public int getEnchantmentValue() {
 				return 2;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
+			}
+
+			public int getLevel() {
+				return 1;
 			}
 		}, 3, -3f, new Item.Properties());
 	}
@@ -76,6 +76,6 @@ public class AbsoluteAltercationItem extends SwordItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		AbsoluteAltercationToolInInventoryTickProcedure.execute(entity, itemstack);
+		AbsoluteAltercationToolInInventoryTickProcedure.execute(entity);
 	}
 }

@@ -28,16 +28,16 @@ public class SpecialAxeItem extends AxeItem {
 				return 7f;
 			}
 
-			public int getLevel() {
-				return 2;
-			}
-
 			public int getEnchantmentValue() {
 				return 2;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Blocks.IRON_BLOCK));
+			}
+
+			public int getLevel() {
+				return 1;
 			}
 		}, 1, -3f, new Item.Properties());
 	}

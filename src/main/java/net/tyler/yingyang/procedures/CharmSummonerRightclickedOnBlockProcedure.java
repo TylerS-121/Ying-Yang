@@ -50,5 +50,12 @@ public class CharmSummonerRightclickedOnBlockProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Blocks.CHERRY_LOG.asItem()) {
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(YingyangModItems.BLOOMS_CHARM));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
+		}
 	}
 }

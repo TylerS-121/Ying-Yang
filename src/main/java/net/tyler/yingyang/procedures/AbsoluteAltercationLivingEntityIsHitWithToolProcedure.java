@@ -19,7 +19,7 @@ public class AbsoluteAltercationLivingEntityIsHitWithToolProcedure {
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 10, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 20, 1));
 		entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("yingyang:blood_gone")))), 2);
 		entity.setSecondsOnFire(3);
 	}

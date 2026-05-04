@@ -27,11 +27,7 @@ public class MagikalSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
-			}
-
-			public int getLevel() {
-				return 1;
+				return 5f;
 			}
 
 			public int getEnchantmentValue() {
@@ -41,7 +37,11 @@ public class MagikalSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -3f, new Item.Properties().fireResistant());
+
+			public int getLevel() {
+				return 1;
+			}
+		}, 3, 8f, new Item.Properties().fireResistant());
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class MagikalSwordItem extends SwordItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 		Level world = entity.level();
-		MagikalSwordLivingEntityIsHitWithToolProcedure.execute(entity, itemstack);
+		MagikalSwordLivingEntityIsHitWithToolProcedure.execute(entity);
 		return retval;
 	}
 

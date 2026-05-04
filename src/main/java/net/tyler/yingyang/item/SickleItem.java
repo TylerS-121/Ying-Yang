@@ -32,16 +32,16 @@ public class SickleItem extends SwordItem {
 				return 4f;
 			}
 
-			public int getLevel() {
-				return 1;
-			}
-
 			public int getEnchantmentValue() {
 				return 2;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
+			}
+
+			public int getLevel() {
+				return 1;
 			}
 		}, 3, -2.7f, new Item.Properties().fireResistant());
 	}

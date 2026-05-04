@@ -36,7 +36,7 @@ public class MkParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize((float) 0.2, (float) 0.2);
-		this.quadSize *= (float) 1;
+		this.quadSize *= (float) 1.0;
 		this.lifetime = 7;
 		this.gravity = (float) 0;
 		this.hasPhysics = true;

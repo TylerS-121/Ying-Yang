@@ -1,16 +1,16 @@
 
 package net.tyler.yingyang.item;
 
-import net.tyler.yingyang.procedures.GreatswordsteelRightclickedProcedure;
-import net.tyler.yingyang.procedures.GreatswordsteelLivingEntityIsHitWithToolProcedure;
+import net.tyler.yingyang.procedures.CleaveprojProjectileHitsLivingEntityProcedure;
+import net.tyler.yingyang.procedures.CleaveRightclickedProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
@@ -19,8 +19,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class GreatswordsteelItem extends SwordItem {
-	public GreatswordsteelItem() {
+public class CleaveItem extends AxeItem {
+	public CleaveItem() {
 		super(new Tier() {
 			public int getUses() {
 				return 100;
@@ -31,11 +31,11 @@ public class GreatswordsteelItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 7f;
 			}
 
 			public int getEnchantmentValue() {
-				return 2;
+				return 10;
 			}
 
 			public Ingredient getRepairIngredient() {
@@ -45,7 +45,7 @@ public class GreatswordsteelItem extends SwordItem {
 			public int getLevel() {
 				return 1;
 			}
-		}, 3, -2.7f, new Item.Properties());
+		}, 1, -2.9f, new Item.Properties());
 	}
 
 	@Override
@@ -55,14 +55,14 @@ public class GreatswordsteelItem extends SwordItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 		Level world = entity.level();
-		GreatswordsteelLivingEntityIsHitWithToolProcedure.execute(sourceentity);
+		CleaveprojProjectileHitsLivingEntityProcedure.execute(world, entity, itemstack);
 		return retval;
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		GreatswordsteelRightclickedProcedure.execute(entity);
+		CleaveRightclickedProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 

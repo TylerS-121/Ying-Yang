@@ -19,7 +19,6 @@ import net.tyler.yingyang.init.YingyangModProcedures;
 import net.tyler.yingyang.init.YingyangModParticleTypes;
 import net.tyler.yingyang.init.YingyangModItems;
 import net.tyler.yingyang.init.YingyangModEntities;
-import net.tyler.yingyang.init.YingyangModEnchantments;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -31,8 +30,6 @@ public class YingyangMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing YingyangMod");
 		YingyangModParticleTypes.load();
-
-		YingyangModEnchantments.load();
 
 		YingyangModEntities.load();
 
