@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "yingyang:cut_moss"
+    }
+  },
+  "result": {
+    "item": "minecraft:moss_block",
+    "count": 1
+  }
+}

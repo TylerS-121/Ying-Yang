@@ -3,31 +3,29 @@
   "textures": {
     "layer0": "yingyang:item/tool_greatsword_silver"
   },
-    "display": {
-        "ground": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 2, 0],
-            "scale":[ 1, 1, 1 ]
-        },
-        "fixed": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 0, 0],
-            "scale":[ 1, 1, 1 ]
-        },
-        "thirdperson_righthand": {
-            "rotation": [ 0, 90, 40 ],
-            "translation": [ 0, 12, 2 ],
-            "scale": [ 2.0, 2.0, 2.0 ]
-        },
-        "firstperson_righthand": {
-            "rotation": [ 0, 90, 40 ],
-            "translation": [ 0, 12, 2 ],
-            "scale": [ 2.0, 2.0, 2.0 ]
-        },
-        "firstperson_lefthand": {
-            "rotation": [ 0, 90, 40 ],
-            "translation": [ 0, 12, 2 ],
-            "scale": [ 2.0, 2.0, 2.0 ]
-        }
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, 45],
+      "translation": [0, 13, 1],
+      "scale": [2, 2, 1.25]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 90, -45],
+      "translation": [0, 13, 1],
+      "scale": [2, 2, 1.25]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, -90, 25],
+      "translation": [0 ,8 ,2.5],
+      "scale": [1.5, 1.5, 1]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, -25],
+      "translation": [0, 8 ,2.5],
+      "scale": [1.5, 1.5, 1]
+    },
+    "fixed": {
+      "scale": [2.4, 2.4, 1]
     }
+  }
 }
